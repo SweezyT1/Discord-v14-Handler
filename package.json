@@ -1,0 +1,29 @@
+{
+  "name": "discord-bot-scripts",
+  "description": "bot application",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./src/Launcher.js",
+  "type": "module",
+  "scripts": {
+    "lint": "npx eslint src",
+    "lint:fix": "npx eslint src --fix",
+    "dev": "set NODE_ENV=development && cd src && node --max_old_space_size=512 --optimize_for_size --expose-gc --gc-interval=1 Launcher.js"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  },
+  "author": "Luiz Eduardo <lopesduarte282@gmail.com>",
+  "dependencies": {
+    "cli-color": "^2.0.3",
+    "discord.js": "14.0.3",
+    "dotenv": "16.0.1",
+    "moment": "^2.29.4",
+    "winston": "3.8.1"
+  },
+  "devDependencies": {
+    "eslint": "8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.25.2"
+  }
+}

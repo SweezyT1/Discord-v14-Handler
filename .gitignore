@@ -1,0 +1,11 @@
+
+*-lock.json
+yarn.lock
+
+
+node_modules
+src/logs
+.idea
+
+
+.env
